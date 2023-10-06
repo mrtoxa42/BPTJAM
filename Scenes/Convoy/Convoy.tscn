@@ -1,3 +1,32 @@
 [gd_scene format=2]
 
 [node name="Convoy" type="Node2D"]
+
+[node name="Player" type="Position2D" parent="."]
+
+[node name="Soldier1" type="Position2D" parent="."]
+position = Vector2( -40, 0 )
+
+[node name="Soldier2" type="Position2D" parent="."]
+position = Vector2( -80, 0 )
+
+[node name="Soldier3" type="Position2D" parent="."]
+position = Vector2( -112, 0 )
+
+[node name="Soldier4" type="Position2D" parent="."]
+position = Vector2( -152, 0 )
+
+[node name="Soldier5" type="Position2D" parent="."]
+position = Vector2( -192, 0 )
+
+[node name="Soldier6" type="Position2D" parent="."]
+position = Vector2( -232, 0 )
+
+[node name="Soldier7" type="Position2D" parent="."]
+position = Vector2( -272, 0 )
+
+[node name="Soldier8" type="Position2D" parent="."]
+position = Vector2( -305, 0 )
+
+[node name="Soldier9" type="Position2D" parent="."]
+position = Vector2( -345, 0 )
