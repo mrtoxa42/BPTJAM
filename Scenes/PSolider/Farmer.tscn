@@ -1,10 +1,12 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scripts/PSoliders/Farmer.gd" type="Script" id=1]
-[ext_resource path="res://Assets/first_farmer.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 20 )
+
+[sub_resource type="StreamTexture" id=2]
+load_path = "res://.import/first_farmer.png-f57edb2548c009a1a010aa66e7d72c13.stex"
 
 [node name="Farmer" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -14,4 +16,4 @@ position = Vector2( 0, 1 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 2 )
+texture = SubResource( 2 )
