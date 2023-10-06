@@ -25,8 +25,6 @@ func _on_Area2D2_mouse_exited():
 
 func _on_Area2D3_mouse_entered():
 	$Box/LabelTwo2.modulate = Color.green
-	
-	
 
 func _on_Area2D3_mouse_exited():
 	$Box/LabelTwo2.modulate = Color.white
@@ -39,6 +37,8 @@ func _on_VillageArea_area_entered(area):
 func gather_men():
 	$Box/LabelOne.modulate = Color.white
 	$Box.hide()
+	GameManager.convoy.army_plus()
+	GameManager.conplayer.dinar_down()
 func plunder():
 	$Box/LabelTwo.modulate = Color.white
 	$Box.hide()
