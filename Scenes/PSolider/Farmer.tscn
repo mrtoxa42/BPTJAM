@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/PSoliders/Farmer.gd" type="Script" id=1]
 
@@ -7,6 +7,21 @@ extents = Vector2( 10, 20 )
 
 [sub_resource type="StreamTexture" id=2]
 load_path = "res://.import/first_farmer.png-f57edb2548c009a1a010aa66e7d72c13.stex"
+
+[sub_resource type="Animation" id=8]
+resource_name = "Attack"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 50.9, 0.0 ]
+}
 
 [sub_resource type="Animation" id=3]
 resource_name = "Detected"
@@ -21,6 +36,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 10.0, 900.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
 }
 
 [sub_resource type="RectangleShape2D" id=4]
@@ -45,6 +72,7 @@ texture = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Detected"
+anims/Attack = SubResource( 8 )
 anims/Detected = SubResource( 3 )
 
 [node name="FarmerArea" type="Area2D" parent="." groups=["Farmer"]]
