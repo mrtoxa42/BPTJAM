@@ -59,3 +59,31 @@ func _on_FarmerUpdateButton_pressed():
 func _on_Close_pressed():
 	menu_close()
 	GameManager.convoy.village_false()
+
+
+func _on_SwordMenUpdateButton_pressed():
+	if GameManager.dinar >= 15 and GameManager.currentswordmen < 12 and GameManager.currentfarmer >= 1:
+		GameManager.convoy.upgrade_swordmen()
+		GameManager.dinar -= 15
+		$TraningMenu/DinarLabel.text = "ALTIN:" + str(GameManager.dinar)
+		var swordmen = get_node("TraningMenu/SwordMen/Farmer"+str(GameManager.currentswordmen))
+		if swordmen != null:
+			swordmen.hide()
+		var farmers =  get_node("TraningMenu/Farmers/Farmer"+ str(GameManager.currentfarmer))
+		if farmers != null:
+			farmers.hide()
+		
+		GameManager.currentfarmer -=1
+		GameManager.currentswordmen +=1
+		
+		var farmers2 =  get_node("TraningMenu/Farmers/Farmer"+ str(GameManager.currentfarmer))
+		if farmers2 != null:
+			farmers2.show()
+		var swordmen2 = get_node("TraningMenu/SwordMen/Farmer"+str(GameManager.currentswordmen))
+		if swordmen2 != null:
+			swordmen2.show()
+	else:
+		if GameManager.dinar < 10:
+			$AnimationPlayer.play("DinarError")
+		elif GameManager.currentfarmer < 1:
+			$AnimationPlayer.play("FarmerError")

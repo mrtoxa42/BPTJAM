@@ -882,6 +882,427 @@ position = Vector2( 313, 107 )
 texture = ExtResource( 7 )
 hframes = 6
 
+[node name="Archers" type="Node2D" parent="TraningMenu"]
+position = Vector2( 19, 179 )
+
+[node name="Farmer12" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 481, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer12"]
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer12/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer12/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer12/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer12/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer12/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer12/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer12/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer11" type="Sprite" parent="TraningMenu/Archers/Farmer12/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( 168, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer12" type="Sprite" parent="TraningMenu/Archers/Farmer12/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( 192, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer13" type="Sprite" parent="TraningMenu/Archers/Farmer12/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( 216, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer14" type="Sprite" parent="TraningMenu/Archers/Farmer12/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( 240, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer11" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 481, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer11"]
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer11/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer11/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer11/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer11/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer11/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer11/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer11/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer11" type="Sprite" parent="TraningMenu/Archers/Farmer11/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( 168, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer12" type="Sprite" parent="TraningMenu/Archers/Farmer11/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( 192, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer13" type="Sprite" parent="TraningMenu/Archers/Farmer11/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( 216, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 481, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer10"]
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer11" type="Sprite" parent="TraningMenu/Archers/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( 168, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer12" type="Sprite" parent="TraningMenu/Archers/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( 192, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer9" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 481, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer9"]
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer9/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer9/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer9/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer9/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer9/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer9/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer9/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer11" type="Sprite" parent="TraningMenu/Archers/Farmer9/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( 168, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer8" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 481, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer8"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer8/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer8/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer8/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer8/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer8/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer8/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer7" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 457, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer7"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer7/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer7/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer7/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer7/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer7/Farmer10/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer6" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 433, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer6"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer6/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer6/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer6/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer6/Farmer10/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer5" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 409, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer5"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer5/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer5/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer5/Farmer10/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer4" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 385, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer4"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer4/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer4/Farmer10/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer3" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 361, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer3"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer3/Farmer10"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer2" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 337, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer10" type="Sprite" parent="TraningMenu/Archers/Farmer2"]
+position = Vector2( -24, 0 )
+texture = ExtResource( 7 )
+hframes = 6
+
+[node name="Farmer1" type="Sprite" parent="TraningMenu/Archers"]
+visible = false
+position = Vector2( 313, 107 )
+texture = ExtResource( 7 )
+hframes = 6
+
 [node name="FarmerUpdateButton" type="TouchScreenButton" parent="TraningMenu"]
 self_modulate = Color( 0.607843, 0.576471, 0.576471, 1 )
 position = Vector2( 324, 194 )
