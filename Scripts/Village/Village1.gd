@@ -40,6 +40,7 @@ func gather_men():
 	GameManager.convoy.army_plus()
 	GameManager.conplayer.dinar_down()
 func plunder():
+	get_tree().change_scene("res://Scenes/War/WarScene1.tscn")
 	$Box/LabelTwo.modulate = Color.white
 	$Box.hide()
 func keep_going():
