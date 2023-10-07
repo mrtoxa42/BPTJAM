@@ -9,31 +9,34 @@ func _input(event):
 	if attack == false:
 		if Input.is_action_pressed("A"):
 			velocity.x = -1
+			$AnimationPlayer.play("Run")
 		elif Input.is_action_pressed("D"):
+			$AnimationPlayer.play("Run")
 			velocity.x = 1
 		if Input.is_action_pressed("W"):
+			$AnimationPlayer.play("Run")
 			velocity.y = -1
 		elif Input.is_action_pressed("S"):
+			$AnimationPlayer.play("Run")
 			velocity.y = 1
 		if Input.is_action_pressed("ui_select"):
+			$AnimationPlayer.play("Attack")
 			Attack()
 
 
 
 func _process(delta):
-	move_and_slide(velocity * speed)
+	move_and_slide(velocity * speed) 
 
 
 func Attack():
 	attack = true
-	$AnimatedSprite.play("Attack")
-	$AnimatedSprite.offset = Vector2(0,0)
+	$AnimationPlayer.play("Attack")
 
 
 
 
-func _on_AnimatedSprite_animation_finished():
-	if $AnimatedSprite.animation == "Attack":
-		$AnimatedSprite.offset = Vector2(-0,0)
-		$AnimatedSprite.play("Idle")
-		attack = false
+func _on_AnimationPlayer_animation_finished(anim_name):
+		if anim_name  == "Attack":
+			$AnimationPlayer.play("Idle")
+			attack = false
