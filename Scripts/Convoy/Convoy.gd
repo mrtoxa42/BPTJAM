@@ -1,6 +1,6 @@
 extends Node2D
 
-var farmer = preload("res://Scenes/Convoy/ConFarmer.tscn")
+
 var village = false
 
 
@@ -27,9 +27,10 @@ func village_false():
 func army_plus():
 	GameManager.currentarmy += 1
 	GameManager.currentfarmer +=1
-	var armycount =  get_node("Soldier" + str(GameManager.currentarmy))
-	var Farmer = farmer.instance()
-	add_child(Farmer)
-	Farmer.global_position = armycount.global_position
+	var armycount =  get_node("Farmers/Soldier" + str(GameManager.currentarmy))
+	armycount.show()
+	
 	village = false
 
+func upgrade_swordmen():
+	pass
