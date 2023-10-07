@@ -14,7 +14,7 @@ func _process(delta):
 		
 
 
-func _on_ConvoyArea_area_entered(area):
+func _on_ConvoyArea_area_entered(area): 
 	if area.is_in_group("Village") or area.is_in_group("Traning"):
 		village = true
 
@@ -46,7 +46,3 @@ func upgrade_swordmen():
 	
 
 
-func _on_Testtimer_timeout():
-	print(str(GameManager.currentarmy) + "ordu büyüklüğü")
-	print(str(GameManager.currentfarmer) + "Çiftçi sayısı")
-	print(str(GameManager.currentswordmen) + "Kılıçlı asker sayısı")
