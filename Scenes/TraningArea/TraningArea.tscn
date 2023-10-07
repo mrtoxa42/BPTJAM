@@ -116,7 +116,6 @@ position = Vector2( 0, -0.5 )
 shape = SubResource( 1 )
 
 [node name="TraningMenu" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Sprite" type="Sprite" parent="TraningMenu"]
 position = Vector2( 522, 314 )
@@ -138,6 +137,13 @@ margin_right = 314.0
 margin_bottom = 292.0
 custom_fonts/font = SubResource( 2 )
 text = "Kılıçlı Asker:"
+
+[node name="Farmerlabel3" type="Label" parent="TraningMenu"]
+margin_top = 475.0
+margin_right = 293.0
+margin_bottom = 498.0
+custom_fonts/font = SubResource( 2 )
+text = "Okçu:"
 
 [node name="Farmers" type="Node2D" parent="TraningMenu"]
 
@@ -883,7 +889,7 @@ texture = ExtResource( 7 )
 hframes = 6
 
 [node name="Archers" type="Node2D" parent="TraningMenu"]
-position = Vector2( 19, 179 )
+position = Vector2( -29, 379 )
 
 [node name="Farmer12" type="Sprite" parent="TraningMenu/Archers"]
 visible = false
@@ -1310,6 +1316,13 @@ scale = Vector2( 11.5625, 1 )
 normal = ExtResource( 8 )
 pressed = ExtResource( 8 )
 
+[node name="SwordMenUpdateButton" type="TouchScreenButton" parent="TraningMenu"]
+self_modulate = Color( 0.607843, 0.576471, 0.576471, 1 )
+position = Vector2( 324, 402 )
+scale = Vector2( 11.5625, 1 )
+normal = ExtResource( 8 )
+pressed = ExtResource( 8 )
+
 [node name="FarmerupdateLabel" type="Label" parent="TraningMenu"]
 margin_left = 341.0
 margin_top = 197.0
@@ -1317,6 +1330,14 @@ margin_right = 680.0
 margin_bottom = 220.0
 custom_fonts/font = SubResource( 3 )
 text = "Asker güçlendirmek için basın (-10 altın)"
+
+[node name="FarmerupdateLabel2" type="Label" parent="TraningMenu"]
+margin_left = 341.0
+margin_top = 405.0
+margin_right = 680.0
+margin_bottom = 428.0
+custom_fonts/font = SubResource( 3 )
+text = "Asker güçlendirmek için basın (-15 altın)"
 
 [node name="DinarLabel" type="Label" parent="TraningMenu"]
 margin_left = 736.0
@@ -1349,4 +1370,5 @@ anims/FarmerError = SubResource( 7 )
 [connection signal="area_entered" from="TraningArea" to="." method="_on_TraningArea_area_entered"]
 [connection signal="area_exited" from="TraningArea" to="." method="_on_TraningArea_area_exited"]
 [connection signal="pressed" from="TraningMenu/FarmerUpdateButton" to="." method="_on_FarmerUpdateButton_pressed"]
+[connection signal="pressed" from="TraningMenu/SwordMenUpdateButton" to="." method="_on_SwordMenUpdateButton_pressed"]
 [connection signal="pressed" from="TraningMenu/Close" to="." method="_on_Close_pressed"]
