@@ -22,7 +22,6 @@ tracks/0/keys = {
 extents = Vector2( 31, 31 )
 
 [node name="Boss2" type="KinematicBody2D"]
-position = Vector2( -200, 0 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -34,3 +33,21 @@ anims/GirisAni = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
+
+[node name="ShootPosition" type="Position2D" parent="."]
+position = Vector2( -31, 0 )
+
+[node name="AttackTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="ShootPosition2" type="Position2D" parent="."]
+position = Vector2( -31, 31 )
+
+[node name="ShootPosition3" type="Position2D" parent="."]
+position = Vector2( -31, -29 )
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_AttackTimer_timeout"]
