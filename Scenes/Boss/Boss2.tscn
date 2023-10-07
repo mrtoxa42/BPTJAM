@@ -40,9 +40,6 @@ position = Vector2( -31, 0 )
 [node name="AttackTimer" type="Timer" parent="."]
 autostart = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
-current = true
-
 [node name="ShootPosition2" type="Position2D" parent="."]
 position = Vector2( -31, 31 )
 
