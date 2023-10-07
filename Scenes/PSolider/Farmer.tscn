@@ -27,7 +27,6 @@ tracks/0/keys = {
 extents = Vector2( 10, 20.5 )
 
 [sub_resource type="CircleShape2D" id=5]
-radius = 340.99
 
 [sub_resource type="DynamicFont" id=6]
 
@@ -71,3 +70,5 @@ value = 3.0
 
 [connection signal="area_entered" from="FarmerArea" to="." method="_on_FarmerArea_area_entered"]
 [connection signal="area_exited" from="FarmerArea" to="." method="_on_FarmerArea_area_exited"]
+[connection signal="area_entered" from="DetectedArea" to="." method="_on_DetectedArea_area_entered"]
+[connection signal="area_exited" from="DetectedArea" to="." method="_on_DetectedArea_area_exited"]
