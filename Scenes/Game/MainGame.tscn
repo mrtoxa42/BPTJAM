@@ -1,50 +1,16 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Village/Village1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Convoy/Convoy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/TraningArea/TraningArea.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Assets/TileMap/FantasySet/bakcground_day1.png" type="Texture" id=4]
-[ext_resource path="res://Assets/TileMap/FantasySet/bakcground_day3.png" type="Texture" id=5]
-[ext_resource path="res://Assets/TileMap/FantasySet/mainlevbuild.png" type="Texture" id=6]
+[ext_resource path="res://Assets/TileMap/ParalaxBg/Reference.png" type="Texture" id=4]
 
 [sub_resource type="TileSet" id=1]
-0/name = "bakcground_day1.png 0"
+0/name = "Reference.png 0"
 0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 640, 384 )
-0/tile_mode = 0
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
-
-[sub_resource type="TileSet" id=2]
-0/name = "bakcground_day3.png 0"
-0/texture = ExtResource( 5 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 640, 384 )
-0/tile_mode = 0
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
-
-[sub_resource type="TileSet" id=3]
-0/name = "mainlevbuild.png 0"
-0/texture = ExtResource( 6 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 15, 17, 34, 32 )
+0/region = Rect2( 0, 0, 1600, 896 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
@@ -57,33 +23,29 @@
 
 [node name="MainGame" type="Node2D"]
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap4" type="TileMap" parent="."]
+position = Vector2( 0, -8 )
 tile_set = SubResource( 1 )
 format = 1
-tile_data = PoolIntArray( 65516, 0, 0, 65526, 0, 0, 0, 0, 0, 10, 0, 0, 20, 0, 0, 30, 0, 0, 40, 0, 0 )
-
-[node name="TileMap2" type="TileMap" parent="."]
-tile_set = SubResource( 2 )
-format = 1
-tile_data = PoolIntArray( 262124, 0, 0, 262134, 0, 0, 196608, 0, 0, 196618, 0, 0, 196628, 0, 0, 196638, 0, 0, 196648, 0, 0 )
-
-[node name="TileMap3" type="TileMap" parent="."]
-tile_set = SubResource( 3 )
-cell_size = Vector2( 32, 32 )
-format = 1
-tile_data = PoolIntArray( 917504, 0, 0, 917505, 0, 0, 917506, 0, 0, 917507, 0, 0, 917508, 0, 0, 917509, 0, 0, 917510, 0, 0, 917511, 0, 0, 917512, 0, 0, 917513, 0, 0, 917514, 0, 0, 917515, 0, 0, 917516, 0, 0, 917517, 0, 0, 917518, 0, 0, 917519, 0, 0, 917520, 0, 0, 917521, 0, 0, 917522, 0, 0, 917523, 0, 0, 917524, 0, 0, 917525, 0, 0, 917526, 0, 0, 917527, 0, 0, 917528, 0, 0, 917529, 0, 0, 917530, 0, 0, 917531, 0, 0, 917532, 0, 0, 917533, 0, 0, 917534, 0, 0, 917535, 0, 0, 917536, 0, 0, 917537, 0, 0, 917538, 0, 0, 917539, 0, 0, 917540, 0, 0, 917541, 0, 0, 917542, 0, 0, 917543, 0, 0, 917544, 0, 0, 917545, 0, 0, 917546, 0, 0, 917547, 0, 0, 917548, 0, 0, 917549, 0, 0, 917550, 0, 0, 917551, 0, 0, 917552, 0, 0, 917553, 0, 0, 917554, 0, 0, 917555, 0, 0, 917556, 0, 0 )
+tile_data = PoolIntArray( -262146, 0, 0, -327657, 0, 0 )
 
 [node name="Convoy" parent="." instance=ExtResource( 2 )]
 position = Vector2( 24, 416 )
 
+[node name="Camera2D" type="Camera2D" parent="Convoy"]
+position = Vector2( 2, -290 )
+current = true
+zoom = Vector2( 2, 1.4 )
+limit_left = 0
+
 [node name="Village1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 274, 451 )
+position = Vector2( 390, 403 )
 
 [node name="Village2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 682, 454 )
+position = Vector2( 962, 410 )
 
 [node name="Village3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1294, 456 )
+position = Vector2( 1658, 404 )
 
 [node name="TraningArea" parent="." instance=ExtResource( 3 )]
-position = Vector2( 952, 446 )
+position = Vector2( 1200, 414 )

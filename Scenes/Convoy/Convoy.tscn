@@ -16,11 +16,8 @@ script = ExtResource( 1 )
 [node name="ConvoyArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ConvoyArea"]
-position = Vector2( -68, -5 )
+position = Vector2( -92, -5 )
 shape = SubResource( 1 )
-
-[node name="GameCamera" type="Camera2D" parent="."]
-current = true
 
 [node name="Farmers" type="Node2D" parent="."]
 

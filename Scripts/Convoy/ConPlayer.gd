@@ -4,7 +4,7 @@ func _ready():
 	GameManager.conplayer = self
 
 func _process(delta):
-	$CanvasLayer/Dinar.text = str(GameManager.dinar)
+	$CanvasLayer/Dinar.text = "ALTIN: " + str(GameManager.dinar)
 	if GameManager.convoy.village == false:
 		$AnimatedSprite.play("Walk")
 	else:

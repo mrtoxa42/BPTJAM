@@ -7,6 +7,10 @@ func _ready():
 func _process(delta):
 	if GameManager.selffarmer == null:
 		GameManager.selffarmer = self
+	if GameManager.convoy.village == false:
+		$AnimationPlayer.play("Walk")
+	else:
+		$AnimationPlayer.play("Idle")
 func destroyed():
 	if GameManager.selffarmer == self:
 		GameManager.selffarmer = null
