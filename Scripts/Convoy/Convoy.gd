@@ -13,7 +13,6 @@ func _process(delta):
 		position.x += 2
 		
 
-
 func _on_ConvoyArea_area_entered(area): 
 	if area.is_in_group("Village") or area.is_in_group("Traning"):
 		village = true
@@ -42,7 +41,8 @@ func upgrade_swordmen():
 	add_child(Swordmen)
 	if GameManager.selffarmer != null:
 		Swordmen.global_position = GameManager.selffarmer.global_position
-	GameManager.selffarmer.destroyed()
+	if GameManager.selffarmer != null:
+	 GameManager.selffarmer.destroyed()
 	
 
 
