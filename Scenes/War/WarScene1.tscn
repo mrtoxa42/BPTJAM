@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/War/WarScene1.gd" type="Script" id=1]
+
+[node name="WarScene1" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="PlayerSpawnPosition" type="Position2D" parent="."]
+
+[node name="SoldierSpawnPosition" type="Position2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true

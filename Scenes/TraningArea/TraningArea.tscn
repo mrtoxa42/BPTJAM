@@ -115,6 +115,7 @@ position = Vector2( 0, -0.5 )
 shape = SubResource( 1 )
 
 [node name="TraningMenu" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Sprite" type="Sprite" parent="TraningMenu"]
 position = Vector2( 522, 314 )
