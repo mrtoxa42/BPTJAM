@@ -1,0 +1,182 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Fonts/YoungSerif-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fonts/RussoOne-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scripts/Menu/StartScreen.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 128
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 128
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "STUDYO"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 6, 7 ), Vector2( 62, 202 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Node2D2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1042, 599 ), Vector2( 365, 202 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Node2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 119.0, 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Node2D2:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -100.2, 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("42:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 1, 2, 3, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.00392157, 0.00392157, 0.00392157, 1 ), Color( 0.694118, 0.0509804, 0.0509804, 1 ), Color( 0.694118, 0.0509804, 0.0509804, 1 ), Color( 0.694118, 0.0509804, 0.0509804, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("42:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Node2D/STU:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 3, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Node2D2/DYO:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 3, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="DynamicFont" id=4]
+size = 128
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[node name="StartScreen" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -96.0
+margin_top = -68.0
+margin_right = 1090.0
+margin_bottom = 662.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = -50.0
+margin_top = -22.0
+margin_right = 1046.0
+margin_bottom = 619.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 6, 7 )
+rotation = 2.07694
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="STU" type="Label" parent="Node2D"]
+margin_right = 297.0
+margin_bottom = 181.0
+custom_fonts/font = SubResource( 1 )
+text = "STU"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D2" type="Node2D" parent="."]
+position = Vector2( 1042, 599 )
+rotation = -1.74882
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="DYO" type="Label" parent="Node2D2"]
+margin_right = 308.0
+margin_bottom = 181.0
+custom_fonts/font = SubResource( 2 )
+text = "DYO"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="StudyoAni" type="AnimationPlayer" parent="."]
+autoplay = "STUDYO"
+anims/STUDYO = SubResource( 3 )
+
+[node name="42" type="Label" parent="."]
+visible = false
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+margin_left = 717.0
+margin_top = 215.0
+margin_right = 876.0
+margin_bottom = 396.0
+custom_fonts/font = SubResource( 4 )
+text = "42"
+
+[connection signal="animation_finished" from="StudyoAni" to="." method="_on_StudyoAni_animation_finished"]
