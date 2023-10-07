@@ -2,7 +2,7 @@ extends Node2D
 
 var farmer = preload("res://Scenes/Convoy/ConFarmer.tscn")
 var swordmen = preload("res://Scenes/Convoy/ConSwordmen.tscn")
-var archer = preload()
+
 var village = false
 
 
