@@ -13,10 +13,10 @@ position = Vector2( 24, 416 )
 position = Vector2( 274, 451 )
 
 [node name="Village2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 849, 451 )
+position = Vector2( 651, 470 )
 
 [node name="Village3" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1314, 446 )
 
 [node name="TraningArea" parent="." instance=ExtResource( 3 )]
-position = Vector2( 547, 455 )
+position = Vector2( 950, 460 )

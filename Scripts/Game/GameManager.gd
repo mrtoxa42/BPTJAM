@@ -16,3 +16,5 @@ var currentswordmen = 1
 var currentarcher = 0
 
 
+#Oyuni içi değişkenler
+var selffarmer
