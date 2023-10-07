@@ -1,7 +1,7 @@
 extends Node2D
 
 var farmer = preload("res://Scenes/Convoy/ConFarmer.tscn")
-var swordmen = preload("res://Scenes/Convoy/ConPlayer.tscn")
+var swordmen = preload("res://Scenes/Convoy/ConSwordmen.tscn")
 var village = false
 
 
@@ -26,7 +26,7 @@ func village_false():
 	village = false
 
 func army_plus():
-	$SpawnPosition.position.x -= 32
+	$SpawnPosition.position.x -= 56
 	GameManager.currentarmy += 1
 	GameManager.currentfarmer +=1
 	var Farmer = farmer.instance()
@@ -39,6 +39,14 @@ func army_plus():
 
 func upgrade_swordmen():
 	var Swordmen = swordmen.instance()
-	GameManager.currentarmy +=1
 	add_child(Swordmen)
-	Swordmen.global_position = $SpawnPosition.global_position
+	if GameManager.selffarmer != null:
+		Swordmen.global_position = GameManager.selffarmer.global_position
+	GameManager.selffarmer.destroyed()
+	
+
+
+func _on_Testtimer_timeout():
+	print(str(GameManager.currentarmy) + "ordu büyüklüğü")
+	print(str(GameManager.currentfarmer) + "Çiftçi sayısı")
+	print(str(GameManager.currentswordmen) + "Kılıçlı asker sayısı")

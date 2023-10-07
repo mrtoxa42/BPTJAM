@@ -30,6 +30,7 @@ func _on_TraningArea_area_exited(area):
 
 func _on_FarmerUpdateButton_pressed():
 	if GameManager.dinar >= 10 and GameManager.currentswordmen < 12 and GameManager.currentfarmer >= 1:
+		GameManager.convoy.upgrade_swordmen()
 		GameManager.dinar -= 10
 		$TraningMenu/DinarLabel.text = "ALTIN:" + str(GameManager.dinar)
 		var swordmen = get_node("TraningMenu/SwordMen/Farmer"+str(GameManager.currentswordmen))
@@ -48,6 +49,11 @@ func _on_FarmerUpdateButton_pressed():
 		var swordmen2 = get_node("TraningMenu/SwordMen/Farmer"+str(GameManager.currentswordmen))
 		if swordmen2 != null:
 			swordmen2.show()
+	else:
+		if GameManager.dinar < 10:
+			$AnimationPlayer.play("DinarError")
+		elif GameManager.currentfarmer < 1:
+			$AnimationPlayer.play("FarmerError")
 
 
 func _on_Close_pressed():

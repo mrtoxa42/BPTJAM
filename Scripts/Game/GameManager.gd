@@ -18,3 +18,4 @@ var currentarcher = 0
 
 #Oyuni içi değişkenler
 var selffarmer
+

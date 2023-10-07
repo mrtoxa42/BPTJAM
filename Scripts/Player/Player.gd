@@ -17,4 +17,3 @@ func _input(event):
 
 func _process(delta):
 	move_and_slide(velocity * speed)
-

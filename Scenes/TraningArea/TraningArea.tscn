@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/TraningArea/TraningArea.gd" type="Script" id=2]
@@ -20,6 +20,87 @@ font_data = ExtResource( 3 )
 [sub_resource type="DynamicFont" id=4]
 font_data = ExtResource( 3 )
 
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=6]
+resource_name = "DinarError"
+tracks/0/type = "value"
+tracks/0/path = NodePath("TraningMenu/ErrorNode:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -117 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TraningMenu/ErrorNode:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TraningMenu/ErrorNode/ErrorLabel:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Yetersiz altın!!!" ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "FarmerError"
+tracks/0/type = "value"
+tracks/0/path = NodePath("TraningMenu/ErrorNode:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -117 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TraningMenu/ErrorNode:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TraningMenu/ErrorNode/ErrorLabel:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Yetersiz köylü!!!" ]
+}
+
 [node name="TraningArea" type="Node2D"]
 script = ExtResource( 2 )
 
@@ -34,7 +115,6 @@ position = Vector2( 0, -0.5 )
 shape = SubResource( 1 )
 
 [node name="TraningMenu" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Sprite" type="Sprite" parent="TraningMenu"]
 position = Vector2( 522, 314 )
@@ -47,7 +127,7 @@ margin_top = 97.0
 margin_right = 278.0
 margin_bottom = 120.0
 custom_fonts/font = SubResource( 2 )
-text = "Farmer:"
+text = "Köylü:"
 
 [node name="Farmerlabel2" type="Label" parent="TraningMenu"]
 margin_left = 219.0
@@ -55,7 +135,7 @@ margin_top = 269.0
 margin_right = 314.0
 margin_bottom = 292.0
 custom_fonts/font = SubResource( 2 )
-text = "SwordMen:"
+text = "Kılıçlı Asker:"
 
 [node name="Farmers" type="Node2D" parent="TraningMenu"]
 
@@ -744,6 +824,22 @@ text = "ALTIN: 100"
 [node name="Close" type="TouchScreenButton" parent="TraningMenu"]
 position = Vector2( 801, 79 )
 normal = ExtResource( 6 )
+
+[node name="ErrorNode" type="Node2D" parent="TraningMenu"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 0, -117 )
+
+[node name="ErrorLabel" type="Label" parent="TraningMenu/ErrorNode"]
+margin_left = 862.0
+margin_top = 538.0
+margin_right = 992.0
+margin_bottom = 561.0
+custom_fonts/font = SubResource( 5 )
+text = "Yetersiz köylü!!!"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/DinarError = SubResource( 6 )
+anims/FarmerError = SubResource( 7 )
 
 [connection signal="area_entered" from="TraningArea" to="." method="_on_TraningArea_area_entered"]
 [connection signal="area_exited" from="TraningArea" to="." method="_on_TraningArea_area_exited"]

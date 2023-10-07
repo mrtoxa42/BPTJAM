@@ -25,5 +25,11 @@ current = true
 [node name="Farmers" type="Node2D" parent="."]
 
 [node name="SpawnPosition" type="Position2D" parent="."]
+position = Vector2( 0, 8 )
+
+[node name="Testtimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
 
 [connection signal="area_entered" from="ConvoyArea" to="." method="_on_ConvoyArea_area_entered"]
+[connection signal="timeout" from="Testtimer" to="." method="_on_Testtimer_timeout"]
