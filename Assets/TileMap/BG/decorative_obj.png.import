@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Layer 1.png-69205c92f54871f5a6e4c34de525b6de.stex"
+path="res://.import/decorative_obj.png-746dfdc3b036910030ea112ced3c5636.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileMap/ParalaxBg/Layer 1.png"
-dest_files=[ "res://.import/Layer 1.png-69205c92f54871f5a6e4c34de525b6de.stex" ]
+source_file="res://Assets/TileMap/BG/decorative_obj.png"
+dest_files=[ "res://.import/decorative_obj.png-746dfdc3b036910030ea112ced3c5636.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Layer 3.png-e625cbb3075e514cd594fe0d14bc801e.stex"
+path="res://.import/bakcground_day3.png-8a05a6728e2eb5a20309fcb7abda9ed2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileMap/ParalaxBg/Layer 3.png"
-dest_files=[ "res://.import/Layer 3.png-e625cbb3075e514cd594fe0d14bc801e.stex" ]
+source_file="res://Assets/TileMap/BG/bakcground_day3.png"
+dest_files=[ "res://.import/bakcground_day3.png-8a05a6728e2eb5a20309fcb7abda9ed2.stex" ]
 
 [params]
 

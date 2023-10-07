@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Layer 4.png-5d6e3f8e7ef34463a59851c8ec502836.stex"
+path="res://.import/mainlevbuild.png-43138ac8ffa2eb3f0825888aed9c435c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileMap/ParalaxBg/Layer 4.png"
-dest_files=[ "res://.import/Layer 4.png-5d6e3f8e7ef34463a59851c8ec502836.stex" ]
+source_file="res://Assets/TileMap/BG/mainlevbuild.png"
+dest_files=[ "res://.import/mainlevbuild.png-43138ac8ffa2eb3f0825888aed9c435c.stex" ]
 
 [params]
 
