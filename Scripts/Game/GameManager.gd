@@ -5,6 +5,7 @@ var player
 var convoy
 var village
 var conplayer
+var a
 
 
 #Ana oyun değişkenleri
