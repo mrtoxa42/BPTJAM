@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/Village/Village1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Convoy/Convoy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/TraningArea/TraningArea.tscn" type="PackedScene" id=3]
 
 [node name="MainGame" type="Node2D"]
 
@@ -12,7 +13,10 @@ position = Vector2( 24, 416 )
 position = Vector2( 274, 451 )
 
 [node name="Village2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 682, 451 )
+position = Vector2( 849, 451 )
 
 [node name="Village3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1074, 451 )
+position = Vector2( 1314, 446 )
+
+[node name="TraningArea" parent="." instance=ExtResource( 3 )]
+position = Vector2( 547, 455 )

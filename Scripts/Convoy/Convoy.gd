@@ -14,7 +14,7 @@ func _process(delta):
 
 
 func _on_ConvoyArea_area_entered(area):
-	if area.is_in_group("Village"):
+	if area.is_in_group("Village") or area.is_in_group("Traning"):
 		village = true
 
 

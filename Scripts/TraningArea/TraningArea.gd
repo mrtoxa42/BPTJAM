@@ -4,19 +4,24 @@ extends Node2D
 
 func _ready():
 	army_update()
-
-
-func menu_open():
 	pass
 
+func menu_open():
+	army_update()
+	$TraningMenu.show()
+func menu_close():
+	$TraningMenu.hide()
 func army_update():
 	var farmers =  get_node("TraningMenu/Farmers/Farmer"+ str(GameManager.currentfarmer))
-	farmers.show()
+	if farmers != null:
+		farmers.show()
 	
 	var swordmen = get_node("TraningMenu/SwordMen/Farmer"+str(GameManager.currentswordmen))
-	swordmen.show()
+	if swordmen !=null:
+		swordmen.show()
 func _on_TraningArea_area_entered(area):
-	pass # Replace with function body.
+	if area.name == "ConvoyArea":
+		menu_open()
 
 
 func _on_TraningArea_area_exited(area):
@@ -43,3 +48,8 @@ func _on_FarmerUpdateButton_pressed():
 		var swordmen2 = get_node("TraningMenu/SwordMen/Farmer"+str(GameManager.currentswordmen))
 		if swordmen2 != null:
 			swordmen2.show()
+
+
+func _on_Close_pressed():
+	menu_close()
+	GameManager.convoy.village_false()
