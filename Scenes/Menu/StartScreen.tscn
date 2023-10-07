@@ -85,7 +85,7 @@ tracks/5/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ false, true ]
+"values": [ true, true ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("Node2D/STU:modulate")
@@ -134,13 +134,13 @@ margin_bottom = 619.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Node2D" type="Node2D" parent="."]
-position = Vector2( 6, 7 )
-rotation = 2.07694
+position = Vector2( 62, 202 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="STU" type="Label" parent="Node2D"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 297.0
 margin_bottom = 181.0
 custom_fonts/font = SubResource( 1 )
@@ -150,13 +150,13 @@ __meta__ = {
 }
 
 [node name="Node2D2" type="Node2D" parent="."]
-position = Vector2( 1042, 599 )
-rotation = -1.74882
+position = Vector2( 365, 202 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="DYO" type="Label" parent="Node2D2"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 308.0
 margin_bottom = 181.0
 custom_fonts/font = SubResource( 2 )
@@ -170,8 +170,7 @@ autoplay = "STUDYO"
 anims/STUDYO = SubResource( 3 )
 
 [node name="42" type="Label" parent="."]
-visible = false
-modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+modulate = Color( 0.694118, 0.0509804, 0.0509804, 0 )
 margin_left = 717.0
 margin_top = 215.0
 margin_right = 876.0
