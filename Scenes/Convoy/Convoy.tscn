@@ -25,6 +25,5 @@ current = true
 [node name="Farmers" type="Node2D" parent="."]
 
 [node name="SpawnPosition" type="Position2D" parent="."]
-position = Vector2( -56, 0 )
 
 [connection signal="area_entered" from="ConvoyArea" to="." method="_on_ConvoyArea_area_entered"]

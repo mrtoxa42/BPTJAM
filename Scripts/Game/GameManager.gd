@@ -11,8 +11,8 @@ var a
 #Ana oyun değişkenleri
 var dinar = 4000
 var currentarmy = 0
-var currentfarmer = 3
-var currentswordmen = 1
+var currentfarmer = 0
+var currentswordmen = 0
 var currentarcher = 0
 
 

@@ -26,15 +26,19 @@ func village_false():
 	village = false
 
 func army_plus():
+	$SpawnPosition.position.x -= 32
 	GameManager.currentarmy += 1
 	GameManager.currentfarmer +=1
 	var Farmer = farmer.instance()
 	add_child(Farmer)
 	Farmer.global_position = $SpawnPosition.global_position
-	$SpawnPosition.position.x -= 32
+
 	
 	
 	village = false
 
 func upgrade_swordmen():
-	pass
+	var Swordmen = swordmen.instance()
+	GameManager.currentarmy +=1
+	add_child(Swordmen)
+	Swordmen.global_position = $SpawnPosition.global_position
