@@ -73,4 +73,5 @@ text = "ALTIN: 100"
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 11 )
 animation = "Walk"
+frame = 1
 playing = true
