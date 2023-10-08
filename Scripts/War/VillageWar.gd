@@ -2,7 +2,7 @@ extends Node2D
 
 var farmer = preload("res://Scenes/PSolider/Farmer.tscn")
 var swordmen = preload("res://Scenes/PSolider/SwordMen.tscn")
-
+var player = preload("res://Scenes/Player/Player.tscn")
 
 
 var farmercounter = 0
@@ -12,6 +12,9 @@ var swordmencounter = 0
 func _ready():
 	farmercounter = GameManager.currentfarmer
 	swordmencounter = GameManager.currentswordmen
+	var Player = player.instance()
+	add_child(Player)
+	Player.global_position = $SoldierSpawnPosition.global_position
 	war_start()
 	
 	
