@@ -168,6 +168,7 @@ anims/Detected = SubResource( 9 )
 
 [node name="PlayerDamage" type="Timer" parent="."]
 
+[connection signal="area_entered" from="FarmerArea" to="." method="_on_FarmerArea_area_entered"]
 [connection signal="body_entered" from="FarmerArea" to="." method="_on_FarmerArea_body_entered"]
 [connection signal="body_exited" from="FarmerArea" to="." method="_on_FarmerArea_body_exited"]
 [connection signal="area_entered" from="DetectedArea" to="." method="_on_DetectedArea_area_entered"]

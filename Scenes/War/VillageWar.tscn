@@ -75,6 +75,21 @@ position = Vector2( 893, 428 )
 [node name="EnemyFarmer5" parent="Enemy" instance=ExtResource( 3 )]
 position = Vector2( 976, 533 )
 
+[node name="EnemyFarmer6" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 899, 265 )
+
+[node name="EnemyFarmer7" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 830, 325 )
+
+[node name="EnemyFarmer8" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 908, 378 )
+
+[node name="EnemyFarmer9" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 829, 428 )
+
+[node name="EnemyFarmer10" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 912, 533 )
+
 [node name="Farmer" parent="." instance=ExtResource( 4 )]
 position = Vector2( 207, 370 )
 
@@ -83,3 +98,12 @@ position = Vector2( 88, 520 )
 
 [node name="Farmer3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 135, 280 )
+
+[node name="Farmer4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 327, 360 )
+
+[node name="Farmer5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 209, 520 )
+
+[node name="Farmer6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 256, 280 )

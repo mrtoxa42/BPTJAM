@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Village/Village1.gd" type="Script" id=2]
 [ext_resource path="res://Fonts/YoungSerif-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Assets/Village/VillageBox.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Village/house3.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 134, 37 )
@@ -30,7 +31,7 @@ script = ExtResource( 2 )
 modulate = Color( 0.564706, 0.517647, 0, 1 )
 position = Vector2( -0.499981, 0 )
 scale = Vector2( 3.45312, 1 )
-texture = ExtResource( 1 )
+texture = ExtResource( 5 )
 
 [node name="VillageArea" type="Area2D" parent="." groups=["Village"]]
 

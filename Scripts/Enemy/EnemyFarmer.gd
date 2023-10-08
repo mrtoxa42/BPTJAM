@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 
-var hp = 14
+var hp = 8
 var speed = 200
 var velocity = Vector2.ZERO
 var currentenemy 
@@ -51,3 +51,13 @@ func take_damage():
 func _on_DetectedArea_area_exited(area):
 	if area == moveenemy:
 		moveenemy = null
+
+
+func _on_FarmerArea_area_entered(area):
+	if area.is_in_group("Sword"):
+		player_damage()
+func player_damage():
+	if hp > 1:
+		hp -=5
+	else:
+		queue_free()
