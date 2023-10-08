@@ -4,7 +4,8 @@ extends Node2D
 
 
 func _on_PlayButton_pressed():
-	get_tree().change_scene("res://Scenes/Game/MainGame.tscn")
+	get_tree().change_scene("res://Scenes/Menu/StartStory.tscn")
+	
 
 
 func _on_Creadits_pressed():

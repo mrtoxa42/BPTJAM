@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/kiliccarpismasi.mp3-10659553a9e61feeec0bd1e52bfbd02a.mp3str"
+
+[deps]
+
+source_file="res://Assets/SfxMusic/kiliccarpismasi.mp3"
+dest_files=[ "res://.import/kiliccarpismasi.mp3-10659553a9e61feeec0bd1e52bfbd02a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

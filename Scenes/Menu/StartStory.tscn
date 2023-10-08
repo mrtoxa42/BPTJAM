@@ -10,7 +10,7 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "StoryAni"
-length = 10.0
+length = 15.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Label:rect_position")
 tracks/0/interp = 1
@@ -60,9 +60,9 @@ color = Color( 0, 0, 0, 1 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 102.0
-margin_top = 79.0
+margin_top = 760.0
 margin_right = 1126.0
-margin_bottom = 425.999
+margin_bottom = 1107.0
 custom_fonts/font = SubResource( 1 )
 text = "Türk Hakanı, Çinli prenses için Tanrı Dağı'nın 
 eteğindeki Kutsal Taş'ı Çin'e verir. Bunun 
@@ -72,6 +72,7 @@ laneti kaldırmak için yola koyulur."
 align = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "StoryAni"
 anims/StoryAni = SubResource( 2 )
 
 [node name="Label2" type="Label" parent="."]
@@ -81,6 +82,7 @@ margin_right = 401.0
 margin_bottom = 907.0
 
 [node name="Sprite" type="Sprite" parent="."]
+visible = false
 position = Vector2( 602, 534 )
 texture = ExtResource( 3 )
 

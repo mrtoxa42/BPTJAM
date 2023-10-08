@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tepegozses.mp3-8ef7addcb50c79ac2171d4a23716eb1b.mp3str"
+
+[deps]
+
+source_file="res://Assets/SfxMusic/tepegozses.mp3"
+dest_files=[ "res://.import/tepegozses.mp3-8ef7addcb50c79ac2171d4a23716eb1b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

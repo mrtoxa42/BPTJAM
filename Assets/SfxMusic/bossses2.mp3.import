@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bossses2.mp3-cf9134bb9168e4b06b46263a0ce7f04c.mp3str"
+
+[deps]
+
+source_file="res://Assets/SfxMusic/bossses2.mp3"
+dest_files=[ "res://.import/bossses2.mp3-cf9134bb9168e4b06b46263a0ce7f04c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
