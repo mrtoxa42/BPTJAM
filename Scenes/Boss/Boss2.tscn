@@ -46,5 +46,8 @@ position = Vector2( -31, 31 )
 [node name="ShootPosition3" type="Position2D" parent="."]
 position = Vector2( -31, -29 )
 
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
 [connection signal="timeout" from="AttackTimer" to="." method="_on_AttackTimer_timeout"]
