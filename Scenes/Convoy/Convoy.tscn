@@ -13,7 +13,7 @@ script = ExtResource( 1 )
 
 [node name="ConPlayer" parent="Player" instance=ExtResource( 2 )]
 
-[node name="ConvoyArea" type="Area2D" parent="."]
+[node name="ConvoyArea" type="Area2D" parent="." groups=["Convoy"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ConvoyArea"]
 position = Vector2( 72, -3 )

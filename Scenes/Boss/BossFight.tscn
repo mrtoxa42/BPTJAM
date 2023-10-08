@@ -36,7 +36,10 @@ tile_data = PoolIntArray( 0, 0, 0 )
 position = Vector2( 1261, 476 )
 
 [node name="SoldierSpawnPosition" type="Position2D" parent="."]
-position = Vector2( 223, 599 )
+position = Vector2( 361, 524 )
+
+[node name="SoldierSpawnPosition2" type="Position2D" parent="."]
+position = Vector2( 187, 530 )
 
 [node name="Boundary" type="Node2D" parent="."]
 position = Vector2( 48, 72 )
