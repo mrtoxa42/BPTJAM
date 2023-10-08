@@ -49,7 +49,7 @@ position = Vector2( 1021, 295 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Boundary/StaticBody2D"]
-position = Vector2( 508, 9.0732 )
+position = Vector2( 518, 201 )
 rotation = 1.57087
 shape = SubResource( 2 )
 
@@ -61,7 +61,25 @@ shape = SubResource( 2 )
 [node name="Enemy" type="Node2D" parent="."]
 
 [node name="EnemyFarmer" parent="Enemy" instance=ExtResource( 3 )]
-position = Vector2( 974, 316 )
+position = Vector2( 963, 265 )
+
+[node name="EnemyFarmer2" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 894, 325 )
+
+[node name="EnemyFarmer3" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 972, 378 )
+
+[node name="EnemyFarmer4" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 893, 428 )
+
+[node name="EnemyFarmer5" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 976, 533 )
 
 [node name="Farmer" parent="." instance=ExtResource( 4 )]
-position = Vector2( 162, 331 )
+position = Vector2( 207, 370 )
+
+[node name="Farmer2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 88, 520 )
+
+[node name="Farmer3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 135, 280 )

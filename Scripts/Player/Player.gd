@@ -3,7 +3,13 @@ extends KinematicBody2D
 var velocity = Vector2.ZERO
 var speed = 200
 var attack = false
-var hp = 10
+var hp = 100
+var currentenemy
+
+func _ready():
+	GameManager.player = self
+
+
 func _input(event):
 	velocity = Vector2.ZERO
 	if attack == false:
@@ -30,7 +36,7 @@ func _input(event):
 			velocity.y = 1
 		if velocity == Vector2.ZERO:
 			$AnimationPlayer.play("Idle")
-		if Input.is_action_pressed("ui_select"):
+		if Input.is_action_pressed("ui_select") and attack == false:
 			$AnimationPlayer.play("Attack")
 			Attack()
 		
@@ -39,8 +45,7 @@ func _input(event):
 
 func _process(delta):
 	move_and_slide(velocity * speed) 
-
-
+	$ProgressBar.value = hp
 func Attack():
 	attack = true
 	$AnimationPlayer.play("Attack")
@@ -51,4 +56,27 @@ func Attack():
 func _on_AnimationPlayer_animation_finished(anim_name):
 		if anim_name  == "Attack":
 			$AnimationPlayer.play("Idle")
+			if currentenemy !=null:
+				currentenemy.take_damage()
 			attack = false
+
+
+func _on_PlayerArea_body_entered(body):
+	if body.is_in_group("Enemy"):
+		currentenemy = body
+		print(body)
+
+	
+func _on_PlayerArea_body_exited(body):
+	if body.is_in_group("Enemy"):
+		if body == currentenemy:
+			currentenemy = null
+
+func take_damage():
+	if hp >1 :
+		hp -=1
+	else:
+		game_over()
+		
+func game_over():
+	pass
