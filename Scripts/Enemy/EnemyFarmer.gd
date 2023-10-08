@@ -12,7 +12,7 @@ func _process(delta):
 		velocity = Vector2(moveenemy.global_position - global_position).normalized()
 		move_and_slide(velocity * speed)
 	$ProgressBar.value = hp
-
+	
 		
 
 
@@ -45,6 +45,8 @@ func take_damage():
 	if hp > 1:
 		hp -=2
 	else:
+		GameManager.enemycounter -= 1
+		print(GameManager.enemycounter)
 		queue_free()
 
 
@@ -60,4 +62,5 @@ func player_damage():
 	if hp > 1:
 		hp -=5
 	else:
+		GameManager.enemycounter -= 1
 		queue_free()

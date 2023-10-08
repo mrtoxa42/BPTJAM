@@ -1,45 +1,58 @@
-extends Node
+extends KinematicBody2D
 
 var hp = 300
 var CurrentAni = "Down"
-
+var veloctiy = Vector2.ZERO
+var speed = 200
+var playerarea = false
 
 func _ready():
-	pass # Replace with function body.
+	GameManager.boss1 = self
 	
 
 func _process(delta):
+	if playerarea == false:
+		veloctiy = Vector2(GameManager.player.global_position - global_position).normalized()
+		$AnimationPlayer.play("BossMoveRight")
+		move_and_slide(veloctiy * speed)
+		
 	$HealthBar.value = hp
 	
 	
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	if  anim_name == "BossMoveDown":
-		$AnimationPlayer.play("Attack")
-		CurrentAni = "Down"
-	if anim_name == "BossMoveRight" :
-		$AnimationPlayer.play("Attack")
-		CurrentAni = "Right"
-	if anim_name == "BossMoveUp" :
-		$AnimationPlayer.play("Attack")
-		CurrentAni = "Up"
-	if anim_name == "BossMoveLeft" :
-		$AnimationPlayer.play("Attack")
-		CurrentAni = "Left"
-		
-		
-	if anim_name == "GirisAni":
-		$AnimationPlayer.play("BossMoveDown")
+	if anim_name == "Attack":
+		if playerarea == true:
+			playerarea = true
+			$AnimationPlayer.play("Attack")
+			GameManager.player.boss_damage()
+	else:
+		playerarea = false
+
 		
 
-	if anim_name == "Attack":
-		if CurrentAni == "Down":
-			$AnimationPlayer.play("BossMoveRight")
-		if CurrentAni == "Right":
-			$AnimationPlayer.play("BossMoveUp")
-		if CurrentAni == "Up":
-			$AnimationPlayer.play("BossMoveLeft")
-		if CurrentAni == "Left" :
-			$AnimationPlayer.play("BossMoveDown")
-		
+
+func _on_Area2D_area_entered(area):
+	if area.is_in_group("Player"):
+		if GameManager.player !=null:
+			playerarea = true
+			$AnimationPlayer.play("Attack")
+			
+			GameManager.player.boss_damage()
+
+
+func take_damage():
+	if hp >1 :
+		hp -=  5
+	else:
+		queue_free()
+
+func player_damage():
+	if hp >1 :
+		hp -=  50
+	else:
+		queue_free()
+func _on_Area2D_area_exited(area):
+	if area.is_in_group("Player"):
+			playerarea = false

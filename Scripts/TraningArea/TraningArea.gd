@@ -58,7 +58,7 @@ func _on_FarmerUpdateButton_pressed():
 
 func _on_Close_pressed():
 	menu_close()
-	GameManager.convoy.village_false()
+	GameManager.movevillage = false
 
 
 func _on_SwordMenUpdateButton_pressed():

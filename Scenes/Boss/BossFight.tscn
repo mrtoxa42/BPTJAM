@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Boss/Boss1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/TileMap/War/game_background_3/game_background_3.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Boss/BossFight.gd" type="Script" id=4]
+
+[sub_resource type="TileSet" id=1]
+0/name = "game_background_3.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 3872, 2144 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 15.02, 760.499 )
+
+[node name="BossFight" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 0.4, 0.4 )
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0 )
+
+[node name="Boss1" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1261, 476 )
+
+[node name="SoldierSpawnPosition" type="Position2D" parent="."]
+position = Vector2( 223, 599 )
+
+[node name="Boundary" type="Node2D" parent="."]
+position = Vector2( 48, 72 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Boundary"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary/StaticBody2D"]
+position = Vector2( 1, 295 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Boundary/StaticBody2D"]
+position = Vector2( 1504, 295 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Boundary/StaticBody2D"]
+position = Vector2( 762.5, 197.964 )
+rotation = 1.57087
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Boundary/StaticBody2D"]
+position = Vector2( 745, 709 )
+rotation = 1.5708
+shape = SubResource( 2 )

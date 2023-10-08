@@ -5,6 +5,7 @@ var speed = 200
 var attack = false
 var hp = 100
 var currentenemy
+var bossarea = false
 
 func _ready():
 	GameManager.player = self
@@ -47,6 +48,9 @@ func _process(delta):
 	move_and_slide(velocity * speed) 
 	$ProgressBar.value = hp
 func Attack():
+	if GameManager.boss1 != null and bossarea == true:
+		GameManager.boss1.player_damage()
+		
 	attack = true
 	$AnimationPlayer.play("Attack")
 
@@ -64,7 +68,7 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 func _on_PlayerArea_body_entered(body):
 	if body.is_in_group("Enemy"):
 		currentenemy = body
-		print(body)
+
 
 	
 func _on_PlayerArea_body_exited(body):
@@ -77,6 +81,20 @@ func take_damage():
 		hp -=1
 	else:
 		game_over()
-		
+func boss_damage():
+	if hp >1 :
+		hp -=10
+	else:
+		game_over()
 func game_over():
 	pass
+
+
+func _on_PlayerArea_area_entered(area):
+	if area.is_in_group("Boss"):
+		bossarea = true
+
+
+func _on_PlayerArea_area_exited(area):
+	if area.is_in_group("Boss"):
+		bossarea = false

@@ -10,13 +10,13 @@ var village = false
 func _ready():
 	GameManager.convoy = self
 func _process(delta):
-	if village == false:
+	if GameManager.movevillage == false:
 		position.x += 2
 		
 
 func _on_ConvoyArea_area_entered(area): 
 	if area.is_in_group("Village") or area.is_in_group("Traning"):
-		village = true
+		GameManager.movevillage = true
 
 
 

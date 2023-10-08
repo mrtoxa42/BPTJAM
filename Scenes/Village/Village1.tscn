@@ -25,6 +25,7 @@ extents = Vector2( 114.5, 13.75 )
 font_data = ExtResource( 3 )
 
 [node name="Village1" type="Node2D"]
+z_index = 1
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]

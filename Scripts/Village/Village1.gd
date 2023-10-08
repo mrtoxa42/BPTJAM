@@ -2,7 +2,7 @@ extends Node2D
 
 
 
-
+var villagewar = preload("res://Scenes/War/VillageWar.tscn")
 
 
 func _on_Area2D_mouse_entered():
@@ -39,12 +39,15 @@ func gather_men():
 	$Box.hide()
 	GameManager.convoy.army_plus()
 	GameManager.conplayer.dinar_down()
+	GameManager.movevillage = false
 func plunder():
+	GameManager.checkpoint +=1
+	var VillageWar = villagewar.instance()
 	get_tree().change_scene("res://Scenes/War/VillageWar.tscn")
 	$Box/LabelTwo.modulate = Color.white
 	$Box.hide()
 func keep_going():
-	GameManager.convoy.village_false()
+	GameManager.movevillage = false
 	$Box.hide()
 	$Box/LabelTwo2.modulate = Color.white
 

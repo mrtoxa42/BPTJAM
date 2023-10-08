@@ -8,7 +8,7 @@
 extents = Vector2( 19.75, 27 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 93, 67.5 )
+extents = Vector2( 52.75, 54.5 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "Attack"
@@ -263,10 +263,10 @@ script = ExtResource( 2 )
 position = Vector2( 9.75, -0.5 )
 shape = SubResource( 1 )
 
-[node name="PlayerArea" type="Area2D" parent="." groups=["Soldier"]]
+[node name="PlayerArea" type="Area2D" parent="." groups=["Player", "Soldier"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerArea"]
-position = Vector2( 4, 1.5 )
+position = Vector2( 0.25, 5.5 )
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -320,6 +320,8 @@ rotation = 1.62852
 shape = SubResource( 10 )
 disabled = true
 
+[connection signal="area_entered" from="PlayerArea" to="." method="_on_PlayerArea_area_entered"]
+[connection signal="area_exited" from="PlayerArea" to="." method="_on_PlayerArea_area_exited"]
 [connection signal="body_entered" from="PlayerArea" to="." method="_on_PlayerArea_body_entered"]
 [connection signal="body_exited" from="PlayerArea" to="." method="_on_PlayerArea_body_exited"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
