@@ -3,7 +3,7 @@ extends KinematicBody2D
 var velocity = Vector2.ZERO
 var speed = 200
 var attack = false
-
+var hp = 10
 func _input(event):
 	velocity = Vector2.ZERO
 	if attack == false:

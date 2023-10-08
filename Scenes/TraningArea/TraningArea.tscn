@@ -116,6 +116,7 @@ position = Vector2( 0, -0.5 )
 shape = SubResource( 1 )
 
 [node name="TraningMenu" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Sprite" type="Sprite" parent="TraningMenu"]
 position = Vector2( 522, 314 )
@@ -139,6 +140,7 @@ custom_fonts/font = SubResource( 2 )
 text = "Kılıçlı Asker:"
 
 [node name="Farmerlabel3" type="Label" parent="TraningMenu"]
+margin_left = 215.0
 margin_top = 475.0
 margin_right = 293.0
 margin_bottom = 498.0

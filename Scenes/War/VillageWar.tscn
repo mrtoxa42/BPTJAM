@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/War/VillageWar.gd" type="Script" id=1]
 [ext_resource path="res://Assets/TileMap/War/game_background_1/game_background_1.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Enemy/EnemyFarmer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/PSolider/Farmer.tscn" type="PackedScene" id=4]
 
 [sub_resource type="TileSet" id=1]
 0/name = "game_background_1.png 0"
@@ -55,3 +57,11 @@ shape = SubResource( 2 )
 position = Vector2( 515, 594 )
 rotation = 1.5708
 shape = SubResource( 2 )
+
+[node name="Enemy" type="Node2D" parent="."]
+
+[node name="EnemyFarmer" parent="Enemy" instance=ExtResource( 3 )]
+position = Vector2( 974, 316 )
+
+[node name="Farmer" parent="." instance=ExtResource( 4 )]
+position = Vector2( 162, 331 )

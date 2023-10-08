@@ -16,41 +16,47 @@ func _process(delta):
 
 
 func _on_FarmerArea_area_entered(area):
-	if area.is_in_group("Enemy"):
-		enemyarea = true
-		if attackenemy == null:
-			attackenemy = area
-			Attack()
+	pass
 		
 
 func _on_FarmerArea_area_exited(area):
-	if area == attackenemy:
-		enemyarea = false
+	pass
 
 
 func _on_DetectedArea_area_entered(area):
-	if area.is_in_group("Enemy"):
+	if area.is_in_group("Soldier"):
 		currentenemy = area
 		
 		
 
 func _on_DetectedArea_area_exited(area):
-	if area.is_in_group("Enemy"):
+	if area.is_in_group("Soldier"):
 		if area == currentenemy:
 			currentenemy = null
 
+
+func _on_Area_area_entered(area):
+	if area.is_in_group("Soldier"):
+		enemyarea = true
+		if attackenemy == null:
+			attackenemy = area
+			Attack()
+
+
+func _on_Area_area_exited(area):
+	if area == attackenemy:
+		enemyarea = false
+
+
 func Attack():
 	$AnimationPlayer.play("Attack")
+	
 	attack = true
 
 func _on_AnimationPlayer_animation_finished(anim_name):
 	if anim_name == "Attack":
+		if currentenemy != null:
+			pass
 		attack = false
 		if enemyarea == true:
 			Attack()
-			
-func take_damage():
-	if hp > 1:
-		hp -1
-	else:
-		queue_free()

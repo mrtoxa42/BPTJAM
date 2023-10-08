@@ -5,6 +5,7 @@ var swordmen = preload("res://Scenes/PSolider/SwordMen.tscn")
 var player = preload("res://Scenes/Player/Player.tscn")
 
 
+
 var farmercounter = 0
 var swordmencounter = 0
 
