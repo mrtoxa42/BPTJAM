@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Fonts/YoungSerif-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/Game/StartStory.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Menu/GOKTURKCE.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -9,7 +10,7 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "StoryAni"
-length = 7.0
+length = 10.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Label:rect_position")
 tracks/0/interp = 1
@@ -17,10 +18,34 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 6, 611 ), Vector2( 6, 50 ) ]
+"values": [ Vector2( 102, 760 ), Vector2( 102, 79 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 5, 7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
 }
 
 [node name="StartStory" type="Node2D"]
@@ -29,20 +54,20 @@ script = ExtResource( 2 )
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = -22.0
 margin_top = -20.0
-margin_right = 1096.0
-margin_bottom = 608.0
+margin_right = 1239.0
+margin_bottom = 742.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 6.0
-margin_top = 50.0
-margin_right = 1030.0
-margin_bottom = 397.0
+margin_left = 102.0
+margin_top = 79.0
+margin_right = 1126.0
+margin_bottom = 425.999
 custom_fonts/font = SubResource( 1 )
-text = "Göktürk Hakanı, Çinli prenses için Tanrı Dağı'nın 
+text = "Türk Hakanı, Çinli prenses için Tanrı Dağı'nın 
 eteğindeki Kutsal Taş'ı Çin'e verir. Bunun 
-sonucunda Tanrı, Göktürk halkını lanetler ve 
-kıtlık başlar. Bunun üzerine XXXXX
+sonucunda Tanrı, Türk halkını lanetler ve 
+kıtlık başlar. Bunun üzerine Kızagan
 laneti kaldırmak için yola koyulur."
 align = 1
 
@@ -50,7 +75,13 @@ align = 1
 anims/StoryAni = SubResource( 2 )
 
 [node name="Label2" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 213.0
+margin_top = 893.0
+margin_right = 401.0
+margin_bottom = 907.0
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 602, 534 )
+texture = ExtResource( 3 )
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
