@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/Menu/Settings.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/RussoOne-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/Menu/return.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Menu/soun off.png" type="Texture" id=4]
+[ext_resource path="res://Assets/SfxMusic/click.mp3" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -35,6 +36,9 @@ text = "Music : On"
 position = Vector2( 528, 305 )
 scale = Vector2( 4, 4 )
 normal = ExtResource( 4 )
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
 
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
 [connection signal="pressed" from="SoundOff" to="." method="_on_SoundOff_pressed"]
