@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/arkafon.mp3-0892d7411498dfcecccff08d38957461.mp3str"
+
+[deps]
+
+source_file="res://Assets/SfxMusic/arkafon.mp3"
+dest_files=[ "res://.import/arkafon.mp3-0892d7411498dfcecccff08d38957461.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
