@@ -16,7 +16,7 @@ func _ready():
 	swordmencounter = GameManager.currentswordmen
 	var Player = player.instance()
 	add_child(Player)
-	Player.global_position = $SoldierSpawnPosition.global_position
+	Player.global_position = $SoldierSpawnPosition2.global_position
 	war_start()
 	
 func _process(delta):

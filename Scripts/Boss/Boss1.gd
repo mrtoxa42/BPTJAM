@@ -46,6 +46,7 @@ func take_damage():
 	if hp >1 :
 		hp -=  5
 	else:
+		get_tree().change_scene("res://Scenes/Game/FinalScene.tscn")
 		queue_free()
 
 func player_damage():

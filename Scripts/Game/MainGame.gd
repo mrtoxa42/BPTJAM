@@ -13,5 +13,5 @@ func _ready():
 
 
 func _on_Area2D_area_entered(area):
-	if area.is_in_group("Player"):
+	if area.is_in_group("Convoy"):
 		get_tree().change_scene("res://Scenes/Boss/BossFight.tscn")

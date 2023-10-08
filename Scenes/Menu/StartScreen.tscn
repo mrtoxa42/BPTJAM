@@ -118,6 +118,7 @@ outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
 [node name="StartScreen" type="Node2D"]
+scale = Vector2( 1.2, 1.2 )
 script = ExtResource( 3 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
