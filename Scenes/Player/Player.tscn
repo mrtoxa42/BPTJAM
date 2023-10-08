@@ -320,6 +320,8 @@ rotation = 1.62852
 shape = SubResource( 10 )
 disabled = true
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
 [connection signal="area_entered" from="PlayerArea" to="." method="_on_PlayerArea_area_entered"]
 [connection signal="area_exited" from="PlayerArea" to="." method="_on_PlayerArea_area_exited"]
 [connection signal="body_entered" from="PlayerArea" to="." method="_on_PlayerArea_body_entered"]

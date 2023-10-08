@@ -63,3 +63,5 @@ shape = SubResource( 2 )
 position = Vector2( 745, 709 )
 rotation = 1.5708
 shape = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
