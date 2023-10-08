@@ -64,4 +64,3 @@ text = "K U T S A L   T A Ş I N    L A N E T İ"
 [connection signal="pressed" from="Creadits" to="." method="_on_Creadits_pressed"]
 [connection signal="pressed" from="Settings" to="." method="_on_Settings_pressed"]
 [connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
-[connection signal="pressed" from="PlayButton" to="." method="_on_Play_Button_pressed"]

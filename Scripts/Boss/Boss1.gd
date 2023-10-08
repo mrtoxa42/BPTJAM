@@ -11,7 +11,7 @@ func _ready():
 func _process(delta):
 	$HealthBar.value = hp
 	
-
+	
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
