@@ -9,7 +9,8 @@ func _ready():
 	var a = get_node("CheckPoint/CheckPoint" + str(GameManager.checkpoint))
 	print(a)
 	Convoy.global_position = a.global_position 
-		
+	$Arkafon.play()
+	
 
 
 func _on_Area2D_area_entered(area):
