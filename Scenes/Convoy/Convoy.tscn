@@ -25,9 +25,8 @@ shape = SubResource( 1 )
 position = Vector2( 0, 8 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 0, 8 )
 current = true
-zoom = Vector2( 1, 0.4 )
 limit_left = 0
-limit_bottom = 300
 
 [connection signal="area_entered" from="ConvoyArea" to="." method="_on_ConvoyArea_area_entered"]

@@ -52,6 +52,7 @@ func player_damage():
 	if hp >1 :
 		hp -=  50
 	else:
+		get_tree().change_scene("res://Scenes/Game/FinalScene.tscn")
 		queue_free()
 func _on_Area2D_area_exited(area):
 	if area.is_in_group("Player"):
